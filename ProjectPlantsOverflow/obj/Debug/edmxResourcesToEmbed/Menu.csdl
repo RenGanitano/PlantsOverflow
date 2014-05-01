@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="plantsoverflowModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="plantsoverflowEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="recipes" EntityType="plantsoverflowModel.recipe" />
+  </EntityContainer>
+  <EntityType Name="recipe">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="recipe1" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="recipe1" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="detail" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>
